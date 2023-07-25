@@ -31,11 +31,12 @@ body {
 aside {
   display: flex;
   flex-direction: column;
-  width: 35vw;
-  height: 85vh;
+  width: 20vw;
+  height: 80vh;
   gap: 30px;
 }
 
+/* Profile Card */
 .profile-card {
   display: flex;
   flex-direction: column;
@@ -49,6 +50,7 @@ img{
   width: 128px;
   height: 128px;
   border-radius: 100px;
+  margin-bottom: 5px;
 }
 
 .names-profile {
@@ -86,6 +88,85 @@ img{
 .infos-icon {
   width: 24px;
 }
+
+/* tecnologias */
+.card-body {
+  padding: 30px;
+  border-radius: 20px;
+  background: var(--bg-cards);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tag-techs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.tag-techs span {
+  width: 86px;
+  height: 24px;
+border-radius: 30px;
+background-color: var(--bg-techs);
+color: black;
+font-size: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.first-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+.second-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+.third-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+/* Experiences */
+
+ul.info-part {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 40px;
+  height: auto;
+  text-align: left;
+  line-height: 18px;
+}
+
+li h1{
+  font-size: 14px;
+  font-weight: bolder;
+}
+li h2{
+  font-size: 12px;
+  font-weight: lighter;
+}
+li span{
+  font-size: 12px;
+  font-weight: bold; 
+}
+
+
+/* Education */ 
 
 
 /* main */
@@ -204,12 +285,12 @@ main {
   font-size: 16px;
 }
 
-ul {
+ul .hashtags{
   display: flex;
   gap: 10px;
 }
 
-li {
+ul.hashtags li {
   list-style: none;
   display: inline;
 }
@@ -226,4 +307,5 @@ footer {
   bottom: 0;
   height: 35px;
   width: 100vw;
+  margin-top: 30px;
 }
